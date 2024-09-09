@@ -25,7 +25,7 @@ public class CheckOutPage extends AbstractComponent{
 	@FindBy(xpath = "//div[@class='payment__shipping']//button[1]")
 	WebElement selectCountry;
 	
-	@FindBy(css = ".action__submit")
+	@FindBy(xpath = "//a[normalize-space()='Place Order']")
 	WebElement submitBtn;
 	
 	By results = By.cssSelector(".ta-results");
