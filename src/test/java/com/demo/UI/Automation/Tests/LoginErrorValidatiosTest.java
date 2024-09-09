@@ -17,7 +17,7 @@ public class LoginErrorValidatiosTest extends BaseTest {
 	public void validateErrorMessage_Login(HashMap<String, String> data) throws IOException {
 
 		lp.loginToApp(data.get("email"), data.get("password"));
-		Assert.assertEquals("Incorrct email or password.", lp.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", lp.getErrorMessage());
 
 	}
 
