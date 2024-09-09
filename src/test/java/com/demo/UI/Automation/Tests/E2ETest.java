@@ -19,7 +19,7 @@ import com.demo.UI.Automation.pageObjects.ProductCatalog;
 public class E2ETest extends BaseTest {
 
 	@Test(dataProvider = "getData")
-	public void productOrderTest(HashMap<String, String> data) throws IOException {
+	public void productOrderTest(HashMap<String, String> data) throws IOException, InterruptedException {
 
 		ProductCatalog pc = lp.loginToApp(data.get("email"), data.get("password"));
 		List<WebElement> products = pc.getProductList();

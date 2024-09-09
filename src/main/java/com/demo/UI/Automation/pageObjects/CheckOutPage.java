@@ -37,7 +37,8 @@ public class CheckOutPage extends AbstractComponent{
 		selectCountry.click();
 	}
 	
-	public ConfirmationPage submitOrder() {
+	public ConfirmationPage submitOrder() throws InterruptedException {
+		Thread.sleep(3000);
 		submitBtn.click();
 		return new ConfirmationPage(driver);
 	}
