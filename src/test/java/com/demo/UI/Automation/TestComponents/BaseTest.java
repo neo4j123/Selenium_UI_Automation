@@ -44,7 +44,7 @@ public class BaseTest {
 			if (browserName.equalsIgnoreCase("headless")) {
 			}
 			driver = new ChromeDriver(opt);
-			driver.manage().window().setSize(new Dimension(144, 900))
+			driver.manage().window().setSize(new Dimension(144, 900));
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("edge")) {
