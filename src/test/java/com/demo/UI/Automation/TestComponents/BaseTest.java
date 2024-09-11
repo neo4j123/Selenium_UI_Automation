@@ -55,7 +55,6 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		return driver;
 		
-
 	}
 
 	public List<HashMap<String, String>> getJsonData(String fileName) throws IOException {
